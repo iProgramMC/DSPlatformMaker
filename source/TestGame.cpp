@@ -636,7 +636,7 @@ begin_deleting_shit:
 		for (uint32_t i = 0; i < enemies.size(); i++) {
 			if (enemies.at(i)->markForRemoval) {
 				// here we have the mark for removal shit, remove 
-				// and restart the loop (not most efficient but it will do!
+				// and restart the loop (not most efficient but it will do!)
 				enemies.erase(enemies.begin() + i);
 				goto begin_deleting_shit;
 			}
